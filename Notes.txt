@@ -1,3 +1,4 @@
+Chapter 1
 #include <iostream> - Preprocessor Directive
 using namespace std; - Standard Namespace
 
@@ -14,3 +15,9 @@ Programming Errors
 Syntax Error - 
 Runtime Error - 
 Logic Errors - 
+
+Chapter 2
+
+    ^
+    |
+8/20/25 ----------------------------------
