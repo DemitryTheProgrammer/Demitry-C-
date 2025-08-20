@@ -1,0 +1,16 @@
+#include <iostream> - Preprocessor Directive
+using namespace std; - Standard Namespace
+
+int main() - main function
+{
+
+}
+
+cout - console output
+endl - end line (newline)
+<< - Stream insertion operator (sends new string to console)
+
+Programming Errors
+Syntax Error - 
+Runtime Error - 
+Logic Errors - 
