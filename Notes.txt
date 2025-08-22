@@ -17,7 +17,63 @@ Runtime Error -
 Logic Errors - 
 
 Chapter 2
+cin - object to read input from the keyboard
 
+Identifiers - the names that identify elements such as variables
+and functions in a program.
+
+Identifier - a sequence of characters that consists of letters, digits, 
+and underscores (cannot start with a digit)
+* Cannot ba a reserved word (cin, cout).
+* Must start with a letter or underscore
     ^
     |
 8/20/25 ----------------------------------
+
+Variables are used to represent values that may be changed in the program.
+Examples:
+
+int x = 1; -- Integer Variable
+double radius = 1.8; -- Double Variable
+char a; -- Character Variable
+
+        Named Constants
+A named constant is an identifier that represents a permanent value.
+* Constant names should be in uppercase.
+* You don't have to repeatedly type the same value.
+
+Examples:
+const datatype CONSTANTNAME = VALUE;
+const double PI = 3.14159;
+const int SIZE = 3;
+
+        sizeof Function
+You can use the sizeof function to find the size of a type.
+
+        Integer Division
+5 / 2 yields 2
+5.0 / 2 yields 2.5
+
+        Augmented Assignment Operators
++= -> i += 8 -> i = i + 8
+-+ -> i -= 8 -> i = i - 8
+*= -> i *= 8 -> i = i * 8
+/= -> i /= 8 -> i = i / 8
+%= -> i %= 8 -> i = i & 8
+
+        Increment and Decrement Operators
+++var -> Preincrement - increases by 1 and evaluated to the new value in var after the increment
+var++ -> Postincrement - evaluates to the original value in var and increments by 1.
+--var -> Predecrement - decrements var by 1 and evaluates to the new value in var after the decrement.
+var-- -> Postdecrement - Evaluates to the original value in var and decrements var by 1.
+    Examples:
+int i = 10;                 int newNum = 10 * i;
+int newNum = 10 * i++; ---> i = i + 1;
+
+        Type Casting
+Implicit Casting - double d = 3; (type widening)
+Explicit Casting - int i = static_cast<int>(3.0); (type narrowing)
+int i = (int)3.9; (fraction part is truncated)
+    ^
+    |
+8/22/25 ----------------------------------
