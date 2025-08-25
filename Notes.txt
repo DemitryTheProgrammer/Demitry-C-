@@ -77,3 +77,60 @@ int i = (int)3.9; (fraction part is truncated)
     ^
     |
 8/22/25 ----------------------------------
+
+Chapter 3
+        Relational Operators
+< - less than
+<= - less than or equal to
+> - greater than
+>= - greater than or equal to
+== - equal to
+!= - not equal to
+
+        Logical Operators
+! - not - logical negation
+&& - and - logical conjugation
+|| - or - logical disjunction
+
+        Switch Statements
+A switch statement executes statements based on the value of a variable or an expression.
+
+switch (status)
+{
+ case 0: compute taxes for single fliers;
+ break;
+
+ case 1: compute taxes for married file jointly;
+ break;
+
+ case 2: compute taxes for married file seperately;
+ break;
+
+ case 3; compute taxes for head of household;
+ break;
+
+ default: cout << "Errors: invalid status" << endl;
+}
+
+        Conditional Operator
+if (x > 0)
+  y = 1
+else
+  y = -1;
+
+is equivalent to
+
+y = (x > 0) ? 1 : -1;
+(booleanExpression) ? expression1 : expression2
+
+        Generating Random Numbers
+rand() - can be used to obtain a random number
+
+Include <cstdlib> for rand() and srand() functions.
+Use srand(time(0)); before rand function. (seed)
+
+Include <ctime> library for time function.
+
+    ^
+    |
+8/25/25 ----------------------------------
