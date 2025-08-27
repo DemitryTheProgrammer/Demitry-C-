@@ -134,3 +134,81 @@ Include <ctime> library for time function.
     ^
     |
 8/25/25 ----------------------------------
+
+Chapter 4 - Mathematical Functions, Characters, and Strings
+        Trigonometric Functions
+sin(radians) - Returns the trigonometric sine of an angle in radians.
+cos(radians) - Returns the trigonometric cosine of an angle in radians.
+tan(radians) - Returns the trigonometric tangent of an angle in radians.
+asin(a) - Returns the angle in radians for the inverse of sine.
+acos(a) - Returns the angle in radians for the inverse of cosine.
+atan(a) - Returns the anfle in radians for the inverse of tangent.
+
+        Exponent Functions
+exp(x) - Returns e raised to power of x(e^x). | Ex: exp(1.0) returns 2.71828
+log(x) - Returns the natural logarithm of x (ln(x)). Ex: log(E) returns 1.0
+log10(x) - Returns the base 10 logarithm of x. Ex: log10(10.0) returns 1.0
+pow(a, b) - Returns a raised to the power of b. Ex: pow(2.0, 3) returns 8.0
+sqrt(x) - Returns the square root of x for x >= 0. sqrt(4.0) returns 2.0
+
+        Rounding Functions
+ceil(x) = x is rounded up to its nearest integer. This integer is returned as a 
+double value.
+Ex: ceil(2.1) returns 3.0
+    ceil(2.0) returns 2.0
+    ceil(-2.1) returns -2.0
+
+floor(x) = x is rounded down to its nearest integer. This integer is returned as
+a double value.
+Ex: floor(2.1) returns 2.0
+    floor(2.0) returns 2.0
+    floor(-2.1) returns -3.0
+
+        The min, max, and abs Functions
+max(2,3) returns 3
+min(2.5, 4.6) returns 2.5
+abs(-2) returns 2
+
+        Character Data Type
+A char data type represents a single character.
+
+The increment and decrement operators can also be used on char variables to get the next or
+preceding character.
+Ex: char ch = 'a'
+    cout << ++ch
+    (will print "b")
+
+    char ch = 'a'
+    cout << ch++
+    (will still print "a")
+
+        Escape Sequences for Special Characters
+\b - Backspace
+\t - Tab
+\n - Linefeed
+\f - Formfeed
+\r - Carriage Return
+\\ - Backslash
+\' - Single Quote
+\" - Double Quote
+
+        Character Functions
+isdigit(ch) - Returns true if the specified character is a digit.
+isalpha(ch) - Returns true if the specified character is a letter.
+isalnum(ch) - Returns true if the specified character is a letter or number.
+islower(ch) - Returns true if the specified character is a lowercase letter.
+isupper(ch) - Returns true if the specified character is an uppercase letter.
+isspace(ch) - Returns true if the specified character is a whitespace character.
+tolower(ch) - Returns the lowercase of the specified character.
+toupper(ch) - Returns the uppercase of the specified character.
+
+        The String Type
+string s;
+string message = "Programming is fun";
+
+length() - Returns the number of characters in this string.
+size() - Same as length();
+at (index) - Returns the character at the specified index from this string.
+    ^
+    |
+8/27/25 ----------------------------------
