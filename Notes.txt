@@ -1,4 +1,4 @@
-Chapter 1
+                Chapter 1
 #include <iostream> - Preprocessor Directive
 using namespace std; - Standard Namespace
 
@@ -16,7 +16,7 @@ Syntax Error -
 Runtime Error - 
 Logic Errors - 
 
-Chapter 2
+                Chapter 2
 cin - object to read input from the keyboard
 
 Identifiers - the names that identify elements such as variables
@@ -78,7 +78,7 @@ int i = (int)3.9; (fraction part is truncated)
     |
 8/22/25 ----------------------------------
 
-Chapter 3
+                Chapter 3
         Relational Operators
 < - less than
 <= - less than or equal to
@@ -135,8 +135,8 @@ Include <ctime> library for time function.
     |
 8/25/25 ----------------------------------
 
-Chapter 4 - Mathematical Functions, Characters, and Strings
-        Trigonometric Functions
+                Chapter 4 - Mathematical Functions, Characters, and Strings
+                        Trigonometric Functions
 sin(radians) - Returns the trigonometric sine of an angle in radians.
 cos(radians) - Returns the trigonometric cosine of an angle in radians.
 tan(radians) - Returns the trigonometric tangent of an angle in radians.
@@ -212,3 +212,44 @@ at (index) - Returns the character at the specified index from this string.
     ^
     |
 8/27/25 ----------------------------------
+
+        Concatenating Strings
+string s3 = s1 + s2
+message += "and programming is fun";
+
+        Reading Strings
+The getline function in the string header file, which reads a string from the keyboard using the syntax:
+getline(cin, s , delimitCharacter)
+
+        Formatting Console Output
+setprecision(n) - sets the precision of a floating-point number
+fixed - displays floating-point numbers in fixed-point notation
+showpoint - causes a floating-point number to be displayed with a decial point
+and trailing zeros even if it has no fractional part
+setw(width) - specifies the width of a print field
+left - justifies the output to the left
+right - justifies the output to the right
+
+                Chapter 5 - Loops
+While Loop
+
+while(loop condition-condition) {
+        // Loop-Body;
+        Statements;
+}
+
+For Loop
+
+for(int count = 0; count<100; count++) {
+        cout << "Welcome to C++";
+}
+
+Do-While Loop
+
+do {
+        // Loop body;
+        Statements(s);
+} while (loop-continuation-condition)
+    ^
+    |
+8/29/25 ----------------------------------
