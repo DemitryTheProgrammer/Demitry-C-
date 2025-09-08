@@ -253,3 +253,77 @@ do {
     ^
     |
 8/29/25 ----------------------------------
+        Chapter 6 - Functions
+A function is a collection of statements that are grouped together to perform an operation.
+Functions can be used to define reusable code and organize and simplify
+code.
+
+    return value type  method   formal 
+                        name    parameters                    
+                    |    |      |        |
+                    V    V      V        V
+function header -> int max (int num1, int num2)
+        {
+                int result;
+function        
+body  ->        if (num1 > num2)
+                        result = num1;
+                else
+                        result = num2;
+
+                return result;
+        }
+
+int z = max(x, y); <- Invoking a function
+
+Function signature is the combination of the function name and the parameter
+list.
+
+The variables defines in the function header are known as formal
+parameters.
+
+When a function is invoked, you pass a value to the parameter. This value 
+is referred to as actual parameter or argument.
+
+By default, the arguments are passed by value to parameters when Invoking
+a function.
+
+        Overloading Functions
+Overloading functions enables you to define the functions with the same name 
+as long as their signatures are different.
+
+        Function Prototypes
+Before a function is called, it must be declared first. One way to ensure that 
+is to place the delcaration before all functions calls. Another way to approach
+it is to declare a function prototype before the function is called. A function 
+prototype is a function declaration without implementation. The implementation 
+can be given later in the program.
+
+        Default Arguments
+C++ allows you to delcare functions with default argument values. The default 
+values are passed to the parameters when a function is invoked without the 
+arguments.
+
+        Inline Functions
+C++ provides inline functions to avoid function calls. Inline functions are not
+called; rather the compiler copies the function code inline at the point of each
+ivocation. To specify an inline function, precede the function declaration with
+the inline keyword.
+
+inline void f(int month, int year)
+{
+        cout << "month is " << month << endl;
+        cout << "year is " << year << endl;
+}
+    ^
+    |
+9/5/25 ----------------------------------
+
+        Chapter 17 - Recursions
+A technique that leads to elegant solutions to problems that are difficult
+to program using simple loops.
+
+A recursive function is one that invokes itself.
+    ^
+    |
+9/5/25 ----------------------------------
