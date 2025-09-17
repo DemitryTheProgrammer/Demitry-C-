@@ -327,3 +327,14 @@ A recursive function is one that invokes itself.
     ^
     |
 9/5/25 ----------------------------------
+
+        Chapter 11 - Pointers
+Pointer variables, simply called pointers, are designed to hold memory addresses as their values. 
+
+To declare a pointer variable, you specify the type of value that the pointer will point to, for example:
+*int ptr;
+ptr = &x;
+
+    ^
+    |
+9/17/25 ----------------------------------
