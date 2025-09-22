@@ -26,9 +26,6 @@ Identifier - a sequence of characters that consists of letters, digits,
 and underscores (cannot start with a digit)
 * Cannot ba a reserved word (cin, cout).
 * Must start with a letter or underscore
-    ^
-    |
-8/20/25 ----------------------------------
 
 Variables are used to represent values that may be changed in the program.
 Examples:
@@ -74,9 +71,6 @@ int newNum = 10 * i++; ---> i = i + 1;
 Implicit Casting - double d = 3; (type widening)
 Explicit Casting - int i = static_cast<int>(3.0); (type narrowing)
 int i = (int)3.9; (fraction part is truncated)
-    ^
-    |
-8/22/25 ----------------------------------
 
                 Chapter 3
         Relational Operators
@@ -130,10 +124,6 @@ Include <cstdlib> for rand() and srand() functions.
 Use srand(time(0)); before rand function. (seed)
 
 Include <ctime> library for time function.
-
-    ^
-    |
-8/25/25 ----------------------------------
 
                 Chapter 4 - Mathematical Functions, Characters, and Strings
                         Trigonometric Functions
@@ -209,9 +199,6 @@ string message = "Programming is fun";
 length() - Returns the number of characters in this string.
 size() - Same as length();
 at (index) - Returns the character at the specified index from this string.
-    ^
-    |
-8/27/25 ----------------------------------
 
         Concatenating Strings
 string s3 = s1 + s2
@@ -250,9 +237,7 @@ do {
         // Loop body;
         Statements(s);
 } while (loop-continuation-condition)
-    ^
-    |
-8/29/25 ----------------------------------
+
         Chapter 6 - Functions
 A function is a collection of statements that are grouped together to perform an operation.
 Functions can be used to define reusable code and organize and simplify
@@ -315,18 +300,12 @@ inline void f(int month, int year)
         cout << "month is " << month << endl;
         cout << "year is " << year << endl;
 }
-    ^
-    |
-9/5/25 ----------------------------------
 
         Chapter 17 - Recursions
 A technique that leads to elegant solutions to problems that are difficult
 to program using simple loops.
 
 A recursive function is one that invokes itself.
-    ^
-    |
-9/5/25 ----------------------------------
 
         Chapter 11 - Pointers
 Pointer variables, simply called pointers, are designed to hold memory addresses as their values. 
@@ -335,6 +314,29 @@ To declare a pointer variable, you specify the type of value that the pointer wi
 *int ptr;
 ptr = &x;
 
-    ^
-    |
-9/17/25 ----------------------------------
+                Chapter 9 - Objects and Classes
+        Objects
+An object represents an entity in the real world that can be distinctly identified.
+Ex: Student, chair, desk, button
+
+The state of an object consists of a set of data fields with current values.
+
+The behavior of an object is defined by a set of functions.
+
+An object has both a state and behavior. The state defines the object, and the behavior defines
+what objects do.
+
+        Classes
+Classes are constructs that define objects of the same type.
+A class uses variables to define data fields and functions to define behaviors. 
+A class provides a special type of function, known as constructors, which are invoked to constructor
+objects from the class.
+
+        Constructor
+The constructor has exactly the same name as the defining class.
+Like regular functions, constructors can be overloaded, making it easy to construct objects with different 
+initial values.
+
+A class normally provides a constructor without arguments.
+
+A class may be declared without constructors.
