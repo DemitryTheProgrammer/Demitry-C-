@@ -340,3 +340,6 @@ initial values.
 A class normally provides a constructor without arguments.
 
 A class may be declared without constructors.
+
+Object - Ex: Car, Plane, Computer
+Class - Ex: Wheel, Wing, Flaps, CPU, GPU
